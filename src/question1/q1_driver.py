@@ -1,13 +1,13 @@
 import numpy as np
-from src.midterm2.question1.q1c import (
+from src.question1.q1c import (
     gauss_iter_solve,
     RHS,
 )
-from src.midterm2.question1.q1a import coef_matrix
-from src.midterm2.question1.q1d import spline_function
+from src.question1.q1a import coef_matrix
+from src.question1.q1d import spline_function
 import matplotlib.pyplot as plt
 
-co2_data = np.loadtxt(r'C:\Users\sydne\git\goph419\goph419-f2024-midterm2-stST\data\data', dtype=float)
+co2_data = np.loadtxt(r'/data/data', dtype=float)
 xd, yd = co2_data[51:62, 0], co2_data[51:62, 1]
 
 
