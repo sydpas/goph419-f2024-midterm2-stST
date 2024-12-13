@@ -7,7 +7,7 @@ from src.question1.q1a import coef_matrix
 from src.question1.q1d import spline_function
 import matplotlib.pyplot as plt
 
-co2_data = np.loadtxt(r'/data/data', dtype=float)
+co2_data = np.loadtxt(r'C:\Users\sydne\git\goph419\goph419-f2024-midterm2-stST\data\data', dtype=float)
 xd, yd = co2_data[51:62, 0], co2_data[51:62, 1]
 
 
@@ -42,7 +42,8 @@ def main():
     plt.grid(True)
 
     plt.tight_layout(rect=(0, 0, 0.95, 0.95))  # leave room for the title
-    plt.savefig('C:\\Users\\sydne\\git\\goph419\\goph419-f2024-midterm2-stSP\\q1figures\\spline.png')
+    plt.savefig(r'C:\Users\sydne\git\goph419\goph419-f2024-midterm2-stST\q1figures\question1spline.png')
+
     plt.show()
 
 
