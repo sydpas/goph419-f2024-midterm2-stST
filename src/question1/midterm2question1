@@ -1,4 +1,26 @@
-b) What are the requirements for the iterative Gauss-Seidel and Jacobi iteration techniques to converge?
-- diagonal dominance guarantees the convergence of the Gauss-Seidel and Jacobi methods.
+b)
+
+What are the requirements for the iterative Gauss-Seidel and Jacobi iteration techniques to converge?
+- diagonal dominance indicates convergence of the Gauss-Seidel and Jacobi methods.
 - the coefficient matrix should be symmetric.
-- a good initial guess will allow for quicker convergence. 
+- a good initial guess will allow for quicker convergence.
+
+Does the coefficient matrix in a) satisfy these conditions?
+- the matrix is diagonally dominant because each diagonal element is larger in absolute value than the sum of the
+non-diagonal elements.
+- the coefficient matrix is symmetric.
+
+Is it guaranteed to converge?
+- no because the coefficient matrix is not 100% diagonal dominant.
+
+Is it possible to converge?
+- yes. it is still diagonally dominant, but its chances of convergence is less than if it was 100% diagonally dominant.
+
+e)
+
+Are the results in d) an accurate representation of CO2 concentration in March of 2015?
+
+Yes, this result is an accurate representation. The spline is fairly linear and shows a steady rate of increase without
+sharp changes that would indicate a deviation of data.
+
+
