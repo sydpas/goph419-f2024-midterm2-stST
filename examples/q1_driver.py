@@ -35,13 +35,12 @@ def main():
     plt.figure(figsize=(10, 6))  # width, height
 
     plt.plot(xd, yd, ':', color='blue', label='CO2 Data')
-    plt.plot(x, y, 'o', color='red', markersize=4, label='Cubic Spline')
+    plt.plot(x, y, 'o', color='purple', markersize=4, label='Cubic Spline')
     plt.xlabel('Years')
-    plt.ylabel('CO2 Concentration')
+    plt.ylabel('CO2 Concentration Annual Mean (ppm)')
+    plt.title('CO2 Concentration Over 2010-2020')
     plt.legend()
     plt.grid(True)
-
-    plt.tight_layout(rect=(0, 0, 0.95, 0.95))  # leave room for the title
     plt.savefig(r'C:\Users\sydne\git\goph419\goph419-f2024-midterm2-stST\q1figures\question1spline.png')
 
     plt.show()
