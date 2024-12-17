@@ -14,7 +14,7 @@ xd, yd = co2_data[51:62, 0], co2_data[51:62, 1]
 def main():
 
     # question 1 c)
-    print(f'Solving the system...')
+    print(f'Solving the system for question 1c)...')
 
     A = coef_matrix()
     b = RHS(xd, yd)
@@ -27,10 +27,13 @@ def main():
     print(f'NumPy solution: {x_np}')
 
     # question 1 d)
+    print(f'Creating cubic spline to interpolate CO2 concentration in March, 2015...')
 
     cubic_spline = spline_function(xd, yd, 3)
     x = np.linspace(min(xd), max(xd), 11)
     y = [cubic_spline(x) for x in x]
+    interpolated_value = cubic_spline(2015.25)
+    print(f"Interpolated value at 2015.25: {interpolated_value}")
 
     plt.figure(figsize=(10, 6))  # width, height
 
