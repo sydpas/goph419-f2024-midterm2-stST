@@ -1,0 +1,14 @@
+d)
+
+Compare results from question 1. Are they consistent?
+
+*from excel* since 0.0798 < 0.12, both methods agree within the bounds of uncertainty
+
+Considering the uncertainty estimates in teh data set (0.12), are 4 sig digs of precision needed?
+
+Measurements are only accurate to 3 sig digs. So, interpolation to 4 sig digs is unnecessary bc the uncertainity of 0.12
+means anything beyond the 3rd digit isn't as precise.
+
+What order of poly interp would be sufficient for the target?
+
+A quadratic polynomial interp (2nd) is sufficient given the uncertainty of 0.12.
